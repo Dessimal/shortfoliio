@@ -1,0 +1,108 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+
+//==============
+
+model Property {
+  id                  Int            @id @default(autoincrement())
+  name                String
+  address             String
+  state               String
+  city                String
+  description         String
+  images              Image[]        // Images relation
+  videos              Video[]        // Videos relation
+  features            Feature[]      // Features relation
+  additionalInfo      AdditionalInfo[]
+  propertyRules       PropertyRule[]
+  price               Price         @relation(fields: [priceId], references: [id])
+  listingPrice        Float          // Price of the property listing
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+  priceId             Int             @unique
+}
+
+model Image {
+  id        Int      @id @default(autoincrement())
+  url       String
+  property  Property @relation(fields: [propertyId], references: [id])
+  propertyId Int
+}
+
+model Video {
+  id        Int      @id @default(autoincrement())
+  url       String
+  property  Property @relation(fields: [propertyId], references: [id])
+  propertyId Int
+}
+
+model Feature {
+  id                   Int              @id @default(autoincrement())
+  basicAmenities       BasicAmenity[]   // e.g. bedrooms, bathrooms
+  otherAmenities       OtherAmenity[]   // e.g. parking space, washing machine
+  additionalAmenities  String[]         // Input field for user-specified amenities
+  property             Property         @relation(fields: [propertyId], references: [id])
+  propertyId           Int
+}
+
+model BasicAmenity {
+  id        Int      @id @default(autoincrement())
+  name      String   // e.g. Bedroom, Bathroom
+  feature   Feature  @relation(fields: [featureId], references: [id])
+  featureId Int
+}
+
+model OtherAmenity {
+  id        Int      @id @default(autoincrement())
+  name      String   // e.g. Car parking space, Washing machine
+  feature   Feature  @relation(fields: [featureId], references: [id])
+  featureId Int
+}
+
+model AdditionalInfo {
+  id          Int         @id @default(autoincrement())
+  availableServices   String[]    // e.g. house keeping, 24/7 support
+  surroundings        String[]    // e.g. water park, grocery store
+  outdoors            String[]    // e.g. hot tub, barbecue
+  moreInformation     String      // User specified input field
+  property            Property    @relation(fields: [propertyId], references: [id])
+  propertyId          Int
+}
+
+model PropertyRule {
+  id                Int        @id @default(autoincrement())
+  checkInFrom       String     // Input field for "Check-in from"
+  checkOutBy        String     // Input field for "Check-out by"
+  prohibitedActivities ProhibitedActivity[]
+  property          Property   @relation(fields: [propertyId], references: [id])
+  propertyId        Int
+}
+
+model ProhibitedActivity {
+  id              Int       @id @default(autoincrement())
+  name            String    // e.g. Smoking, Pets, No loud noise
+  isProhibited    Boolean   // Checkbox for user selection
+  propertyRule    PropertyRule @relation(fields: [propertyRuleId], references: [id])
+  propertyRuleId  Int
+}
+
+model Price {
+  id          Int      @id @default(autoincrement())
+  amount      Float    // Price in some currency
+  property    Property?
+}
