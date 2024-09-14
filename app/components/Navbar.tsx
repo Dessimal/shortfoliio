@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       <button className="lg:hidden" onClick={handleMenuClick}>
-        <AlignJustify size={50} />
+        <AlignJustify size={30} />
       </button>
 
       {toggleNav && (
@@ -50,7 +50,7 @@ const Navbar = () => {
               <Image src={logo} layout="fill" alt="logo" />
             </Link>
             <button onClick={handleMenuClick}>
-              <X size={50} />
+              <X size={30} />
             </button>
           </div>
           <ul className="flex flex-col gap-6 items-center -justify-start">

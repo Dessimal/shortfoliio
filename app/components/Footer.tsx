@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="py-8 pb-32 px-4 grid grid-flow-row sm:grid-flow-row w-full gap-10 bg-primary text-white">
+    <section className="pb-8 pt-16 pb-32 px-4 grid grid-flow-row sm:grid-flow-row w-full gap-10 bg-primary text-white">
       <div className="max-w-[1440px] grid grid-flow-row sm:grid-flow-col sm:grid-cols-4 justify-between gap-6 ">
         {footerLinks.map(({ id, title, links }) => (
           <div key={id}>
@@ -33,7 +33,7 @@ const Footer = () => {
           like).
         </p>
       </div>
-      <div className="border-[1px] w-full border-solid border-white rounded-full" />
+      <div className="border-[.3px] w-full border-solid border-gray-600 " />
       <p className="text-sm text-white">©Shortfolio 2024 All Rights Reserved</p>
       <div>
         <Image
