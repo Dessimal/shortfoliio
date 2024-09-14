@@ -14,11 +14,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    "Home",
-    "Explore",
-    "Invest in Shortlet",
-    "About us",
-    "Support",
+    { link: "Home", path: "/" },
+    { link: "Explore", path: "/explore" },
+    { link: "About us", path: "about" },
+    { link: "Invest in Shorlets", path: "/invest" },
+    { link: "Support", path: "/support" },
   ];
   return (
     <nav className="flex justify-center items-center px-4 py-6 relative">
@@ -28,11 +28,8 @@ const Navbar = () => {
         </Link>
         <div className="hidden sm:flex sm:flex-col">
           <ul className="hidden lg:flex lg:flex lg:flex-row items-center justify-between gap-12">
-            {navLinks.map((link) => (
-              <Link
-                key={link}
-                href={`/${link}`}
-                className="text-sm text-slate-900">
+            {navLinks.map(({ link, path }) => (
+              <Link key={link} href={path} className="text-sm text-slate-900">
                 {link}
               </Link>
             ))}
@@ -57,10 +54,11 @@ const Navbar = () => {
             </button>
           </div>
           <ul className="flex flex-col gap-6 items-center -justify-start">
-            {navLinks.map((link) => (
+            {navLinks.map(({ link, path }) => (
               <Link
                 key={link}
-                href={`/${link}`}
+                onClick={handleMenuClick}
+                href={path}
                 className="text-sm text-slate-900">
                 {link}
               </Link>
