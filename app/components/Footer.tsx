@@ -1,6 +1,5 @@
 import React from "react";
 import { footerLinks } from "@/constant";
-import Link from "next/link";
 import { shortfolioVector } from "@/constant";
 import Image from "next/image";
 

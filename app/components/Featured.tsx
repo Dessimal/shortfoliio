@@ -42,9 +42,9 @@ const Featured = () => {
           subheading="Check a comprehensive listing of our featured Listings"
         />
         <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
-          {properties.map(({ title, picture, Features, Location }) => (
+          {properties.map(({ title, picture, Features, Location, id }) => (
             <Card
-              key={title}
+              key={id}
               title={title}
               picture={picture}
               Features={Features}
