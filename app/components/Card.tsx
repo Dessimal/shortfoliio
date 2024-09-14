@@ -22,7 +22,8 @@ const Card: React.FC<CardProps> = ({
   title,
   Location,
   Features,
-}) => {
+}: CardProps) => {
+  // Explicitly define types for the destructured props
   return (
     <div key={id} className="flex flex-col gap-2">
       <Image
