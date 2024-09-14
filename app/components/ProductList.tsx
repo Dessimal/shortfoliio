@@ -17,7 +17,8 @@ const ProductList = () => {
       <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {newListings.map(({ title, picture, Features, Location, id }) => (
           <Card
-            key={id}
+            key={id} // Add key
+            id={id} // Pass the id to the Card component
             title={title}
             picture={picture}
             Features={Features}
