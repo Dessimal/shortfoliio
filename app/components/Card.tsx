@@ -2,7 +2,27 @@ import { Bath, Bed, MapPin } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const Card = ({ id, picture, title, Location, Features }) => {
+interface Feature {
+  id: number;
+  beds: string;
+  baths: string;
+}
+
+interface CardProps {
+  id: number;
+  picture: string;
+  title: string;
+  Location: string;
+  Features: Feature[];
+}
+
+const Card: React.FC<CardProps> = ({
+  id,
+  picture,
+  title,
+  Location,
+  Features,
+}) => {
   return (
     <div key={id} className="flex flex-col gap-2">
       <Image
