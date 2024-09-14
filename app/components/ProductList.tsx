@@ -15,9 +15,9 @@ const ProductList = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
-        {newListings.map(({ title, picture, Features, Location }) => (
+        {newListings.map(({ title, picture, Features, Location, id }) => (
           <Card
-            key={title}
+            key={id}
             title={title}
             picture={picture}
             Features={Features}

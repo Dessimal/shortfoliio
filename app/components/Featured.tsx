@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, SectionHeading } from "./constant";
 import { propertyOne } from "@/constant";
 
@@ -35,7 +34,7 @@ const Featured = () => {
   ];
 
   return (
-    <section className=" w-full sectionClasses">
+    <section className="w-full sectionClasses">
       <div className="mx-auto">
         <SectionHeading
           mainHeading="Featured Listings"
@@ -44,7 +43,8 @@ const Featured = () => {
         <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {properties.map(({ title, picture, Features, Location, id }) => (
             <Card
-              key={id}
+              key={id} // Pass the 'id' as the key and prop
+              id={id} // Pass 'id' to the Card component
               title={title}
               picture={picture}
               Features={Features}

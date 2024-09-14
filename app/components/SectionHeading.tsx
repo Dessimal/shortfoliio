@@ -1,6 +1,13 @@
-import React from "react";
+// Define the props interface
+interface SectionHeadingProps {
+  mainHeading: string;
+  subheading: string;
+}
 
-const SectionHeading = ({ mainHeading, subheading }) => {
+const SectionHeading: React.FC<SectionHeadingProps> = ({
+  mainHeading,
+  subheading,
+}) => {
   return (
     <div className="mb-14">
       <h2 className="font-bold text-3xl text-slate-950">{mainHeading}</h2>

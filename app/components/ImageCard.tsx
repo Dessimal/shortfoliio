@@ -1,12 +1,23 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-const ImageCard = ({ picture, title, description }) => {
+// Define the props type, allowing picture to be a string (URL) or StaticImageData (imported image)
+interface ImageCardProps {
+  picture: string | StaticImageData;
+  title: string;
+  description: string;
+}
+
+const ImageCard: React.FC<ImageCardProps> = ({
+  picture,
+  title,
+  description,
+}) => {
   return (
     <div className="border-solid rounded-xl relative">
       <Image
         className="rounded-xl"
-        src={picture}
+        src={picture} // This supports both string URLs and imported images
         alt={title}
         width={2000}
         height={1000}

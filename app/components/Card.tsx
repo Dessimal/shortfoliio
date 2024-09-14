@@ -1,5 +1,5 @@
 import { Bath, Bed, MapPin } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface Feature {
@@ -10,7 +10,7 @@ interface Feature {
 
 interface CardProps {
   id: number;
-  picture: string;
+  picture: string | StaticImageData; // Allow both string and StaticImageData
   title: string;
   Location: string;
   Features: Feature[];
@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div key={id} className="flex flex-col gap-2">
       <Image
-        src={picture}
+        src={picture} // This works for both URLs and imported images
         alt={title}
         className="max-w-full rounded-xl"
         width={282}

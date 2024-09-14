@@ -39,7 +39,10 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <button className="lg:hidden" onClick={handleMenuClick}>
+      <button
+        aria-label="Open menu"
+        className="lg:hidden"
+        onClick={handleMenuClick}>
         <AlignJustify size={30} />
       </button>
 
@@ -49,7 +52,7 @@ const Navbar = () => {
             <Link href={"/"} className="relative w-[167px] h-[36px]">
               <Image src={logo} layout="fill" alt="logo" />
             </Link>
-            <button onClick={handleMenuClick}>
+            <button aria-label="Close menu" onClick={handleMenuClick}>
               <X size={30} />
             </button>
           </div>
