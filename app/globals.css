@@ -7,8 +7,10 @@
   --foreground: #171717;
   --accent: #e68a00;
   --blue1: #373bb2;
-  --bgblue: #3e43c8;
+  --blue2: #3e43c8;
   --primary: #021737;
+  --font-custom-regular: "--font-clash-display-variable";
+  --font-custom-bold: "--font-clash-display-bold";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,5 +33,9 @@
 }
 
 .sectionClasses {
-  @apply pt-32 max-w-[1440px] mx-auto;
+  @apply pt-32 max-w-[1200px] mx-auto flex flex-col items-center justify-center;
+}
+
+.sectionPaddings {
+  @apply py-16;
 }

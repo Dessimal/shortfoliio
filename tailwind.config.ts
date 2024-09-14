@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,7 +16,7 @@ const config: Config = {
         bgdblue: "var(--blue2)",
       },
       backgroundImage: {
-        'living-room': "url('./app/assets/hero.png')",
+        "living-room": "url('/assets/hero.png')",
       },
     },
   },

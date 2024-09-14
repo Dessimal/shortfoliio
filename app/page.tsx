@@ -1,4 +1,6 @@
+import Banner from "./components/Banner";
 import { Featured, Hero, Locations } from "./components/constant";
+import ProductList from "./components/ProductList";
 
 const Home = () => {
   return (
@@ -6,6 +8,8 @@ const Home = () => {
       <Hero />
       <Featured />
       <Locations />
+      <Banner />
+      <ProductList />
     </main>
   );
 };
