@@ -4,10 +4,10 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="my-32 flex flex-col sm:flex-row bg-blue relative">
-      <div className="mx-auto max-w-[1200px] flex sm:flex-row justify-between">
-        <div className=" w-full py-32 flex flex-col gap-8 ">
-          <h3 className="font-bold text-3xl text-white max-w-[588px]">
+    <section className="my-32 flex flex-col  bg-blue  px-4">
+      <div className="mx-auto max-w-[1200px] flex flex-col  sm:flex-row sm:justify-between justify-center items-center">
+        <div className=" w-full py-32 flex flex-col justify-center sm:justify-start items-center sm:items-start gap-8 text-center sm:text-left">
+          <h3 className="font-bold text-center text-3xl text-white max-w-[588px]">
             Becoming a house owner with{" "}
             <span className="text-accent">
               investment properties just for you
@@ -24,7 +24,7 @@ const Banner = () => {
             Explore investment
           </button>
         </div>
-        <div className="relative sm:w-[80vw] sm:h-[485px]  ">
+        <div className="relative w-[80vw] h-[485px]  mx-auto sm:mx-0 ">
           <Image
             src={vectorOne}
             alt="vector graphic"
@@ -32,7 +32,7 @@ const Banner = () => {
             objectFit="contain"
             className="h-full w-full"
           />
-          <div className="border-red-500 border-2 sm:w-[691px] sm:h-[882px] border-solid absolute top-0 -left-14">
+          <div className=" sm:w-[691px] sm:h-[882px] border-solid absolute bottom-0 sm:top-0 -left-14">
             <Image
               src={man}
               alt="picture of a man holding a toy house"

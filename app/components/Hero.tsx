@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="uppercase text-slate-700 text-center">
           Planning a weekend escape or a quick business trip?
         </div>
-        <h1 className="text-center text-5xl text-slate-950 font-bold">
+        <h1 className="text-center text-5xl text-primary font-bold">
           Discover Your Ideal{" "}
           <span className="text-center text-blue">ShortStay</span> Destination
         </h1>
@@ -18,17 +18,14 @@ const Hero = () => {
         tailored to your needs. From cozy apartments to luxurious villas
       </p>
 
-      <div>
-        {" "}
-        <form className="w-full border-solid border-green-700">
-          <input
-            className="w-full py-3 px-2 border-solid border-red-700 rounded-2xl my-4"
-            type="search"
-            name=""
-            id=""
-            placeholder="Search for shortstays by type, size or amenities"
-          />
-        </form>
+      <div className="w-full px-16">
+        <input
+          className="w-full max-w-[793px] py-3 px-2 border-solid border-red-700 rounded-full my-4"
+          type="search"
+          name=""
+          id=""
+          placeholder="Search for shortstays by type, size or amenities"
+        />
       </div>
     </section>
   );

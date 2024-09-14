@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="py-8 pb-32 px-4 grid grid-flow-col w-full gap-10 bg-primary">
+    <section className="py-8 pb-32 px-4 grid grid-flow-row sm:grid-flow-col w-full gap-10 bg-primary text-white">
       <div className="max-w-[1440px] grid grid-flow-col sm:grid-flow-row sm:grid-cols-4 justify-between "></div>
       {footerLinks.map(({ id, title, links }) => (
         <div key={id}>

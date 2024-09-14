@@ -18,7 +18,7 @@ const CTA = () => {
             type="email"
             name=""
             id=""
-            className="border-solid rounded-full sm:w-[440px] sm:h-[48px] px-8 "
+            className="border-solid rounded-full sm:w-[440px] sm:h-[48px] px-8 py-4 "
             placeholder="Enter your email"
           />
         </div>

@@ -33,9 +33,13 @@
 }
 
 .sectionClasses {
-  @apply pt-32 max-w-[1200px] mx-auto flex flex-col items-center justify-center;
+  @apply pt-32 px-4 max-w-[1200px] mx-auto flex flex-col items-center justify-center;
 }
 
 .sectionPaddings {
-  @apply py-16;
+  @apply py-16 px-4;
+}
+
+.cardDescriptionClasses {
+  @apply flex items-center gap-1;
 }

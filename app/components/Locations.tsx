@@ -9,36 +9,36 @@ const Locations = () => {
       id: 1,
       picture: abuja,
       title: "Abuja",
-      description: "an awesome place to be",
+      description: "243 properties",
     },
     {
       id: 2,
       picture: lagos,
       title: "Lagos",
-      description: "an awesome place to be",
+      description: "245 properties",
     },
     {
       id: 3,
       picture: rivers,
       title: "Rivers",
-      description: "an awesome place to be",
+      description: "242 properties",
     },
     {
       id: 4,
       picture: abuja,
       title: "Abuja",
-      description: "an awesome place to be",
+      description: "250 properties",
     },
   ];
 
   return (
-    <section className="sectionPaddings flex flex-col justify-center items-center">
-      <div className="max-w-[1200px] mx-auto ">
+    <section className=" w-full sectionClasses">
+      <div className="mx-auto">
         <SectionHeading
           mainHeading="Top Locations"
           subheading="Discover the most popular and highly recommended locations for your short stays."
         />
-        <div className="grid grid-flow-col md:grid-flow-row md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-x-scroll">
+        <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {locations.map(({ id, picture, title, description }) => (
             <ImageCard
               key={id}

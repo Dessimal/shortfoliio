@@ -36,15 +36,16 @@ const Featured = () => {
 
   return (
     <section className=" w-full sectionClasses">
-      <div className="mx-auto border-red-500 bg-red-500">
+      <div className="mx-auto">
         <SectionHeading
           mainHeading="Featured Listings"
           subheading="Check a comprehensive listing of our featured Listings"
         />
-        <div className="grid grid-flow-col md:grid-flow-row md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {properties.map(({ title, picture, Features, Location }) => (
             <Card
               key={title}
+              title={title}
               picture={picture}
               Features={Features}
               Location={Location}
