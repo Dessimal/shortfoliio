@@ -18,9 +18,9 @@ const Hero = () => {
         tailored to your needs. From cozy apartments to luxurious villas
       </p>
 
-      <div className="w-full px-16">
+      <div className="w-full px-16 flex flex-col justify-center items-center">
         <input
-          className="w-full max-w-[793px] py-3 px-2 border-solid border-red-700 rounded-full my-4"
+          className="w-full max-w-[793px] py-3 px-4 border-solid rounded-full my-4 mx-auto"
           type="search"
           name=""
           id=""

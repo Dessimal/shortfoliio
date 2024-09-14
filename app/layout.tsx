@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${clashDisplayVariable.variable} ${clashDisplayVariable.variable} antialiased overflow-hidden relative`}>
+        className={`${clashDisplayVariable.variable} ${clashDisplayVariable.variable} antialiased overflow-x-hidden relative`}>
         <Navbar />
         {children}
         <CTA />
