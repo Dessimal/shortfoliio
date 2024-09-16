@@ -19,7 +19,7 @@ const Footer = () => {
         ))}
       </div>
       <div className="w-full flex flex-col gap-6">
-        <p className="text-white text-xs ">
+        <p className="text-white text-sm ">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of

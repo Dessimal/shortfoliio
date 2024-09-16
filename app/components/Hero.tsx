@@ -5,15 +5,15 @@ const Hero = () => {
   return (
     <section className="relative bg-living-room bg-center h-screen w-full flex flex-col gap-3 items-center justify-center py-6 py-16">
       <div>
-        <div className="uppercase font-bold text-slate-700 text-center">
+        <div className="uppercase text-sm font-bold text-slate-700 text-center">
           Planning a weekend escape or a quick business trip?
         </div>
-        <h1 className="text-center text-5xl font-customSemibold">
+        <h1 className="text-center text-3xl md:text-5xl font-customSemibold">
           Discover Your Ideal{" "}
           <span className="text-center text-blue">ShortStay</span> Destination
         </h1>
       </div>
-      <p className="text-center font-semibold">
+      <p className="text-center text-sm font-semibold">
         Our platform offers a wide selection of short stay accommodation
         tailored to your needs. From cozy apartments to luxurious villas
       </p>

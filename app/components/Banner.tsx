@@ -7,13 +7,13 @@ const Banner = () => {
     <section className="my-32 flex flex-col  bg-blue  px-4">
       <div className="mx-auto max-w-[1200px] flex flex-col gap-1  sm:flex-row sm:justify-between justify-center items-center">
         <div className=" w-full py-32 flex flex-col justify-center sm:justify-start items-center sm:items-start gap-8 text-center sm:text-left">
-          <h3 className="font-bold text-center text-3xl text-white max-w-[588px]">
+          <h3 className="font-bold text-center sm:text-left text-3xl text-white max-w-[588px]">
             Becoming a house owner with{" "}
             <span className="text-accent">
               investment properties just for you
             </span>
           </h3>
-          <p className="text-xs text-white max-w-[588px]">
+          <p className="text-sm text-white max-w-[588px]">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
