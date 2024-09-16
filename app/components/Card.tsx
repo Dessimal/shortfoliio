@@ -30,8 +30,8 @@ const Card: React.FC<CardProps> = ({
         src={picture} // This works for both URLs and imported images
         alt={title}
         className="max-w-full rounded-xl"
-        width={282}
-        height={214}
+        width={2000}
+        height={1000}
       />
       <h4 className="text-xl font-bold">{title}</h4>
       <span className="text-gray-500 flex items-center">

@@ -58,10 +58,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${clashDisplayVariable.variable} ${clashDisplaySemibold.variable} ${clashDisplayRegular.variable} ${clashDisplaySemibold.variable} ${clashDisplayBold.variable} ${clashDisplayMedium.variable} antialiased overflow-x-hidden relative font-customRegular`}>
+        className={`${clashDisplayVariable.variable} ${clashDisplaySemibold.variable} ${clashDisplayRegular.variable} ${clashDisplaySemibold.variable} ${clashDisplayBold.variable} ${clashDisplayMedium.variable} antialiased overflow-x-hidden font-customRegular`}>
         <Navbar />
         {children}
-        <CTA />
         <Footer />
       </body>
     </html>

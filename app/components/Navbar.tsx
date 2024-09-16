@@ -19,6 +19,7 @@ const Navbar = () => {
     { link: "About us", path: "about" },
     { link: "Invest in Shorlets", path: "/invest" },
     { link: "Support", path: "/support" },
+    { link: "Contact", path: "/contact" },
   ];
   return (
     <nav className="flex justify-center items-center px-4 py-6 relative">

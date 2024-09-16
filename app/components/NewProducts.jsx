@@ -5,9 +5,18 @@ import Card from "./Card";
 import { newListings } from "@/constant";
 import Link from "next/link";
 
-const ProductList = () => {
+const NewProducts = () => {
   return (
-    <div className="w-full mx-auto px-1">
+    <section className="w-full sectionClasses">
+      <div className="w-full flex flex-col justify-center sm:flex-row sm:justify-between items-center">
+        <SectionHeading mainHeading="New Listings" subheading="" />
+        <Link
+          href={"/explore"}
+          className="px-6 py-4 flex flex-row items-center justify-center gap-4 rounded-full bg-transparent border-solid border-2 border-gray-500 text-slate-950 mb-8 sm:mb-0">
+          <p>View Listings</p>
+          <MoveRight />
+        </Link>
+      </div>
       <div className="grid grid-cols-1 sm:grid-flow-row sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {newListings.map(({ title, picture, Features, Location, id }) => (
           <Card
@@ -20,8 +29,8 @@ const ProductList = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ProductList;
+export default NewProducts;

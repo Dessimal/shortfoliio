@@ -12,7 +12,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         accent: "var(--accent)",
         primary: "var(--primary)",
+        secondary: "var(--secondary)",
         blue: "var(--blue1)",
+        grey: "var(--grey)",
         bgdblue: "var(--blue2)",
       },
       backgroundImage: {

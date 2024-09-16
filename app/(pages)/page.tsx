@@ -1,6 +1,5 @@
-import Banner from "./components/Banner";
-import { Featured, Hero, Locations } from "./components/constant";
-import ProductList from "./components/ProductList";
+import Banner from "../components/Banner";
+import { Featured, Hero, Locations, NewProducts } from "../components/constant";
 
 const Home = () => {
   return (
@@ -9,7 +8,7 @@ const Home = () => {
       <Featured />
       <Locations />
       <Banner />
-      <ProductList />
+      <NewProducts />
     </main>
   );
 };
