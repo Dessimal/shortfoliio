@@ -4,7 +4,7 @@ import ProductList from "./components/ProductList";
 
 const Home = () => {
   return (
-    <main className="">
+    <main className="font-customRegular">
       <Hero />
       <Featured />
       <Locations />

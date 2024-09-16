@@ -9,8 +9,11 @@
   --blue1: #373bb2;
   --blue2: #3e43c8;
   --primary: #021737;
-  --font-custom-regular: "--font-clash-display-variable";
-  --font-custom-bold: "--font-clash-display-bold";
+  --font-clash-display-variable: "--font-clash-display-variable";
+  --font-clash-display-regular: "--font-clash-display-regular";
+  --font-clash-display-semi-bold: "--font-clash-display-semi-bold";
+  --font-clash-display-medium: "--font-clash-display-medium";
+  --font-clash-display-bold: "--font-clash-display-bold";
 }
 
 @media (prefers-color-scheme: dark) {

@@ -5,7 +5,7 @@ import React from "react";
 const Banner = () => {
   return (
     <section className="my-32 flex flex-col  bg-blue  px-4">
-      <div className="mx-auto max-w-[1200px] flex flex-col  sm:flex-row sm:justify-between justify-center items-center">
+      <div className="mx-auto max-w-[1200px] flex flex-col gap-1  sm:flex-row sm:justify-between justify-center items-center">
         <div className=" w-full py-32 flex flex-col justify-center sm:justify-start items-center sm:items-start gap-8 text-center sm:text-left">
           <h3 className="font-bold text-center text-3xl text-white max-w-[588px]">
             Becoming a house owner with{" "}

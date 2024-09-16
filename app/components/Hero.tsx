@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section className="relative bg-living-room bg-center h-screen w-full flex flex-col gap-3 items-center justify-center py-6 py-16">
       <div>
-        <div className="uppercase text-slate-700 text-center">
+        <div className="uppercase font-bold text-slate-700 text-center">
           Planning a weekend escape or a quick business trip?
         </div>
-        <h1 className="text-center text-5xl text-primary font-bold">
-          Discover Your Ideal{" "}
+        <h1 className="text-center text-5xl font-customSemibold">
+          Discover Medium Your Ideal{" "}
           <span className="text-center text-blue">ShortStay</span> Destination
         </h1>
       </div>

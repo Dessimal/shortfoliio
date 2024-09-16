@@ -18,6 +18,17 @@ const config: Config = {
       backgroundImage: {
         "living-room": "url('/assets/hero.png')",
       },
+      fontFamily: {
+        customVarible: ["var(--font-clash-display-variable)"],
+        customRegular: ["var(--font-clash-display-regular)"],
+        customMedium: ["var(--font-clash-display-medium)"],
+        customSemibold: ["var(--font-clash-display-semi-bold)"],
+        customBold: ["var(--font-clash-display-bold)"],
+      },
+      fontWeight: {
+        regular: "400",
+        bold: "700",
+      },
     },
   },
   plugins: [],
