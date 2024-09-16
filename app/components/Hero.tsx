@@ -9,7 +9,7 @@ const Hero = () => {
           Planning a weekend escape or a quick business trip?
         </div>
         <h1 className="text-center text-5xl font-customSemibold">
-          Discover Medium Your Ideal{" "}
+          Discover Your Ideal{" "}
           <span className="text-center text-blue">ShortStay</span> Destination
         </h1>
       </div>
